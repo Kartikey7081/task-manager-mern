@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/notes";
+const API_URL = "https://task-manager-mern-3hv5.onrender.com/api/notes";
 
 export const getTodos = async () => {
   const res = await fetch(API_URL);

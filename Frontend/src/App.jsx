@@ -16,7 +16,7 @@ const App = () => {
 
 
     try {
-      const res = await axios.get("http://localhost:3000/api/notes");
+      const res = await axios.get("https://task-manager-mern-3hv5.onrender.com/api/notes");
 
       setNotes(res.data);
 
@@ -46,7 +46,7 @@ description: data.description,
         starred: false,
       };
 
-      const res = await axios.post("http://localhost:3000/api/notes", payload);
+      const res = await axios.post("https://task-manager-mern-3hv5.onrender.com/api/notes", payload);
 
       setNotes((prev) => [...prev, res.data]);
 
@@ -61,7 +61,7 @@ description: data.description,
 
   const handleDeleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/notes/${id}`);
+      await axios.delete(`https://task-manager-mern-3hv5.onrender.com/api/notes/${id}`);
 
       setNotes((prev) => prev.filter((note) => note._id !== id));
     } catch (err) {
@@ -77,7 +77,7 @@ description: data.description,
       };
 
       await axios.patch(
-        `http://localhost:3000/api/notes/${note._id}`,
+        `https://task-manager-mern-3hv5.onrender.com/api/notes/${note._id}`,
         updatedTask,
       );
 
@@ -102,7 +102,7 @@ description: data.description,
       };
 
       const res = await axios.patch(
-        `http://localhost:3000/api/notes/${editTask._id}`,
+        `https://task-manager-mern-3hv5.onrender.com/api/notes/${editTask._id}`,
         updatedTask,
       );
 
