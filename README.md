@@ -91,9 +91,9 @@ TASK-MANAGER-MERN/
 # ⚙️ Installation & Setup
 
 ## 1️⃣ Clone Repository
-
+git clone 
 ```bash
-git clone https://github.com/Kartikey7081/task-manager-mern.git
+https://github.com/Kartikey7081/task-manager-mern.git
 ```
 
 ---
